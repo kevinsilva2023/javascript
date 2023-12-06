@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="0.5">
+    <title>Primeiros Passsos com DOM</title>
+    <style>
+        body {
+            background-color: rgb(148, 205, 224);
+            color: black;
+            font: normal 18pt Arial;
+
+        }
+        header {
+            margin: auto;
+            max-width: 800px;
+            padding: 20px;
+            border-radius: 15px;
+            background-color: white;
+        }
+        div {
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 15px;
+
+        }
+        h1, p {
+            text-align: center;
+            margin-top: 5px;
+            padding: 10px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Iniciando estudos com DOM</h1>
+        <p>Aqui vai o resultado</p>
+        <p>Aprendendo usar o <strong>DOM</strong> em JavaScript</p>
+        <div id="msg">Clique em mim</div>
+        <div name="msg2">Tente Novamente</div>
+        <div class="msg3">Tente Novamente</div>
+        <div class="msg4">Agora com Selector</div>
+    </header>
+
+    <script>
+        var p1 = document.getElementsByTagName('p')[0]
+        p1.style.color = 'black'
+        p1.style.backgroundColor = 'gray'
+
+        var p2 = document.getElementsByTagName('p')[1]
+        p2.style.color = 'white'
+        p2.style.backgroundColor = 'darkblue'
+        p2.style.textAlign = 'center'
+
+        var d = document.getElementById('msg')
+        d.style.backgroundColor = 'green'
+        d.innerText = 'Estou aguardando'
+        //document.write(p2.innerHTML)
+
+        var n = document.getElementsByName('msg2')[0]
+        n.style.backgroundColor = 'darkred'
+        n.innerText = 'Eu consegui'
+
+        var c = document.getElementsByClassName('msg3')[0]
+        c.style.backgroundColor = 'green'
+        c.innerText = 'Acertei dnv'
+
+        var s = document.querySelector('div.msg4')
+        s.style.backgroundColor = 'darkred'
+    </script>
+</body>
+</html>
