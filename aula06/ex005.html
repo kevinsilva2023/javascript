@@ -23,6 +23,8 @@
             margin-top: 5px;
             padding: 10px;
             border-radius: 15px;
+            color: white;
+            font-weight: bold;
 
         }
         h1, p {
@@ -30,6 +32,10 @@
             margin-top: 5px;
             padding: 10px;
             border-radius: 15px;
+        
+        }
+        p {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -47,7 +53,7 @@
     <script>
         var p1 = document.getElementsByTagName('p')[0]
         p1.style.color = 'black'
-        p1.style.backgroundColor = 'gray'
+        p1.style.backgroundColor = 'dodgerblue'
 
         var p2 = document.getElementsByTagName('p')[1]
         p2.style.color = 'white'
@@ -55,20 +61,20 @@
         p2.style.textAlign = 'center'
 
         var d = document.getElementById('msg')
-        d.style.backgroundColor = 'green'
+        d.style.backgroundColor = 'dodgerblue'
         d.innerText = 'Estou aguardando'
         //document.write(p2.innerHTML)
 
         var n = document.getElementsByName('msg2')[0]
-        n.style.backgroundColor = 'darkred'
+        n.style.backgroundColor = 'darkblue'
         n.innerText = 'Eu consegui'
 
         var c = document.getElementsByClassName('msg3')[0]
-        c.style.backgroundColor = 'green'
+        c.style.backgroundColor = 'dodgerblue'
         c.innerText = 'Acertei dnv'
 
         var s = document.querySelector('div.msg4')
-        s.style.backgroundColor = 'darkred'
+        s.style.backgroundColor = 'darkblue'
     </script>
 </body>
 </html>
