@@ -18,6 +18,7 @@
             padding: 20px;
             border-radius: 15px;
             background-color: white;
+            box-shadow: 0px 0px 5px cadetblue;
         }
         div {
             margin-top: 5px;
@@ -25,6 +26,7 @@
             border-radius: 15px;
             color: white;
             font-weight: bold;
+            box-shadow: 0px 0px 5px cadetblue;
 
         }
         h1, p {
@@ -32,10 +34,26 @@
             margin-top: 5px;
             padding: 10px;
             border-radius: 15px;
+            box-shadow: 0px 0px 5px cadetblue;
         
         }
         p {
             font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            background-color: white;
+            padding: 20px;
+            
+            margin: auto;
+            margin-top: 15px;
+            border-radius: 15px;
+            box-shadow: 0px 0px 5px cadetblue;
+        }
+        main > article > p {
+            max-width: 800px;
+            background-color: lightblue;
+            box-shadow: 0px 0px 5px cadetblue;
         }
     </style>
 </head>
@@ -49,7 +67,22 @@
         <div class="msg3">Tente Novamente</div>
         <div class="msg4">Agora com Selector</div>
     </header>
-
+    <main>
+        <article>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem nam autem officiis? Odio ipsa praesentium porro mollitia iure ab illo nostrum quis enim possimus, deleniti quae vel. Totam, maxime enim.
+            </p>
+            <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum repellat hic, libero laboriosam laborum, dolor quam nihil doloremque cum aut, voluptate iste atque obcaecati ea! Adipisci optio obcaecati fugit totam!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam earum reiciendis neque ab nemo et, vitae deserunt. A veritatis repellendus voluptate praesentium sed dolor quia totam repellat facere voluptas!
+            </p>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Deleniti magnam earum reiciendis neque ab nemo et, vitae deserunt. A veritatis repellendus voluptate praesentium sed dolor quia totam repellat facere voluptas!
+            </p>
+        </article>
+    </main>
     <script>
         var p1 = document.getElementsByTagName('p')[0]
         p1.style.color = 'black'
