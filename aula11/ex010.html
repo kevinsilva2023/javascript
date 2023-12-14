@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+        #system {
+            background-color: lightblue;
+            width: 50vw;
+            padding: 20px;
+            margin: auto;
+            margin-top: 20px;
+            text-align: center;
+        }
+        #system > p {
+            margin-bottom: 20px;
+        }
+        #linha {
+            border-top: 1px dashed black;
+        }
+        input {
+            margin-top: 20px;
+        }
+        #vel {
+            width: 60px;
+            margin-bottom: 10px;
+        }
+        #button {
+            width: 100px;
+        }
+        #button:hover {
+            background-color: rgb(31, 31, 133);
+            color: white ;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+    </style>
+    <title>Detran</title>
+</head>
+<body>
+    <div id="system">
+        <h1>Sistema de Multas</h1>
+        <p><strong>LIMITE MÁXIMO DA VIA 60KM/H.</strong></p>
+        <div id="linha">
+            Velocidade do carro: <input type="number" name="vel" id="vel">
+            <input type="button" id="button" value="Verificar" onclick="calcular()">
+        </div> <!-- não esquecer de declarar o 'onclick' -->
+        <div id="res">
+        
+        </div>
+    </div>
+    <script>
+        function calcular(){
+            var vel = document.getElementById('vel')
+            var res = document.getElementById('res')
+            var velocidade = Number(vel.value)
+            var multa = Number(velocidade.value * 5)
+            res.innerHTML = `<p>Sua velocidade atual é: <strong>${velocidade}Km/h.</strong> </p>`
+            
+            if (velocidade > 60){
+                var multa = velocidade * 5
+                res.innerHTML +=`<p><strong>Multado </strong>por excesso de velocidade, no valor de: <strong>R$ ${multa}.</strong></p>`// quando é para aparecer dentro da condiçãol, devo declarar "res.innerHTML `<p> </p>`"
+            }
+            res.innerHTML += `<p>Não esqueça o cinto de segurança!</p>` 
+        }
+    </script>
+</body>
+</html>
