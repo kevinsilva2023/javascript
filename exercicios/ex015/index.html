@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="refresh" content="">
+    
+    <title>Verificador de Idade</title>
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento: 
+                <input type="number" name="txano" id="txano" min="0">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <input type="button" value="Verificar" onclick="verificar()">
+        </div>
+        <div id="res">
+            Preencha os dados acima para verificar o resultado! 
+        </div>
+    </section>
+    <footer>
+        <p>&copy; Desenvolvido e Criado por Kevin Silva</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
