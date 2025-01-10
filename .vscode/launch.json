@@ -11,7 +11,7 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "${workspaceFolder}\\aula14\\ambiente2.js"
+            "program": "${workspaceFolder}\\/fechar-empresas-auto/obter-posicao.js"
         }
     ]
 }
